@@ -1,0 +1,58 @@
+{
+     // 模型算法为图片分类
+     "model_algorithm": "image_classification",
+     // 模型类型为PyTorch
+     "model_type": "PyTorch",
+     // 模型自定义脚本的运行时环境为python3.6, 同时支持python2.7
+     "runtime": "python3.6",
+     "dependencies": [{
+         "installer": "pip",
+         "packages": [
+           {
+             "restraint": "ATLEAST",
+             "package_version": "4.1.0",
+             "package_name": "opencv-python"
+           }
+         ]
+       }
+     ],
+     // 模型服务提供一个表单请求的api，请求类型为文件，请求key值为’images’
+     "apis": [{
+             "procotol": "http",
+             "url": "/",
+             "method": "post",
+             "request": {
+                 "Content-type": "multipart/form-data",
+                 "data": {
+                     "type": "object",
+                     "properties": {
+                         "images": {
+                             "type": "file"
+                         }
+                     }
+                 }
+             },
+             "response": {
+                 "Content-type": "applicaton/json",
+                 "data": {
+                     "type": "object",
+                     "properties": {
+                         "mnist_result": {
+                             "type": "array",
+             "item": [{
+                "type": "string"
+                         }]
+                         }
+                     }
+                 }
+             }
+         }
+     ],
+     // 模型的精度信息（仅作为模型展示用途）
+     "metrics": {
+         "f1": 0.124555,
+         "recall": 0.171875,
+         "precision": 0.0023493892851938493,
+         "accuracy": 0.00746268656716417
+     }
+ }

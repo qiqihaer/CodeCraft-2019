@@ -1,0 +1,4 @@
+[2018-12-17 15:47:41] INFO [main: CodeCraft-2019.py, 21] car_path is config/car.txt
+[2018-12-17 15:47:41] INFO [main: CodeCraft-2019.py, 22] road_path is config/road.txt
+[2018-12-17 15:47:41] INFO [main: CodeCraft-2019.py, 23] cross_path is config/cross.txt
+[2018-12-17 15:47:41] INFO [main: CodeCraft-2019.py, 24] answer_path is config/answer.txt

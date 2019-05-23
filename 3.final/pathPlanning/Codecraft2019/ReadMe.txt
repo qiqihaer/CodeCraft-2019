@@ -1,0 +1,4 @@
+在ubuntu环境下工作
+运行build.sh可以进行编译并对此文件夹下的所有内容进行打包，生成bin与build两个文件夹
+运行build_and_run.sh会自动调用build.sh然后用指定参数运行生成的exe，即离线跑
+（此两个文件为华为官方文件，build.sh不能动，但build_and_run.sh可以自己改，比如把config改成train-map-1等）
