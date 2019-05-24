@@ -43,7 +43,7 @@
 
 开源判题器使用的是https://github.com/HgWe/codecraft2019 ，经过一些调整改为了加载规划好的路径信息进行调度（实际结果与官方似乎并非完全一致，但差得也不多），地图数据使用的是初赛的比赛图2，统计结果如下：
 
-图
+![分布直方图](https://github.com/qiqihaer/CodeCraft-2019/blob/master/2.repecharge/Left30Right40.png "左侧每个时间片发车数为30，右侧为40")
 
 故采用了200作为复赛正式赛的实际参数。
 
